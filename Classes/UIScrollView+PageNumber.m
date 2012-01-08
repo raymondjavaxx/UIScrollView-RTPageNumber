@@ -26,6 +26,10 @@
 
 @implementation UIScrollView (PageNumber)
 
+-(NSInteger)totalPages {
+	return (NSInteger)ceil((self.contentSize.width/self.frame.size.width));
+}
+
 -(void)setPageNumber:(NSInteger)pageNumber animated:(BOOL)animated {
 	NSAssert(pageNumber >= 0, @"Page number cannot be negative");
 	CGFloat offset = (self.frame.size.width * pageNumber);

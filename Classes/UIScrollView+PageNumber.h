@@ -27,6 +27,7 @@
 @interface UIScrollView (PageNumber)
 
 @property (nonatomic, assign) NSInteger pageNumber;
+@property (nonatomic, readonly) NSInteger totalPages;
 
 -(void)setPageNumber:(NSInteger)pageNumber animated:(BOOL)animated;
 
