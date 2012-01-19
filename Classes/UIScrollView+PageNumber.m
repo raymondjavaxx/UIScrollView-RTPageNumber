@@ -30,6 +30,10 @@
 	return (NSInteger)ceil((self.contentSize.width/self.frame.size.width));
 }
 
+-(BOOL)isLastPage {
+	return (self.pageNumber == (self.totalPages - 1));
+}
+
 -(void)setPageNumber:(NSInteger)pageNumber animated:(BOOL)animated {
 	NSAssert(pageNumber >= 0, @"Page number cannot be negative");
 	CGFloat offset = (self.frame.size.width * pageNumber);

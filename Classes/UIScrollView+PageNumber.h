@@ -28,6 +28,7 @@
 
 @property (nonatomic, assign) NSInteger pageNumber;
 @property (nonatomic, readonly) NSInteger totalPages;
+@property (nonatomic, readonly) BOOL isLastPage;
 
 -(void)setPageNumber:(NSInteger)pageNumber animated:(BOOL)animated;
 
