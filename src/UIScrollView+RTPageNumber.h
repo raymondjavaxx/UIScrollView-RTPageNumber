@@ -26,10 +26,9 @@
 
 @interface UIScrollView (RTPageNumber)
 
-@property (nonatomic, assign)   NSInteger rt_pageNumber;
-@property (nonatomic, readonly) NSInteger rt_totalPages;
-@property (nonatomic, readonly) BOOL rt_isLastPage;
-
 -(void)rt_setPageNumber:(NSInteger)pageNumber animated:(BOOL)animated;
+-(void)rt_setPageNumber:(NSInteger)pageNumber;
+-(NSInteger)rt_pageNumber;
+-(BOOL)rt_isLastPage;
 
 @end
