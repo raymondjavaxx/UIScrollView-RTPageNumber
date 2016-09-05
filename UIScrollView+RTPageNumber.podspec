@@ -7,5 +7,5 @@ Pod::Spec.new do |s|
   s.source       = {:git => 'https://github.com/raymondjavaxx/UIScrollView-RTPageNumber.git', :tag => '1.0.0'}
   s.license      = {:type => 'MIT', :file => 'LICENSE'}
   s.platform     = :ios, '6.0'
-  s.source_files = 'Classes/UIScrollView+RTPageNumber.{m,h}'
+  s.source_files = 'src/UIScrollView+RTPageNumber.{m,h}'
 end
