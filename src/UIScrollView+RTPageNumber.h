@@ -31,6 +31,13 @@
 @interface UIScrollView (RTPageNumber)
 
 /**
+ Returns the total number of pages.
+
+ @return total pages
+ */
+-(NSInteger)rt_totalPages;
+
+/**
  Sets the page number.
 
  @param pageNumber The page.
