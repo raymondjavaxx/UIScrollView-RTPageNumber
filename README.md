@@ -1,5 +1,5 @@
 UIScrollView+PageNumber
-=======================
+===
 
 Category for calculating and setting current page number on paging-enabled UIScrollViews
 
@@ -22,6 +22,28 @@ Returns the current page number.
 `-(BOOL)rt_isLastPage;`
 
 Returns true if current page is the last.
+
+## Installation
+
+Install via CocoaPods.
+
+	pod 'UIScrollView+RTPageNumber', '~> 1.0'
+
+## Usage
+
+	#import <UIScrollView+RTPageNumber/UIScrollView+RTPageNumber.h>
+
+	...
+
+	UIScrollView *scrollView = ...;
+
+	// Go to 3rd page
+	[scrollView rt_setPageNumber:3 animated:YES];
+
+	...
+
+	// Get current page
+	NSInteger currentPage = [scrollView rt_pageNumber];
 
 ## Copyright
 
