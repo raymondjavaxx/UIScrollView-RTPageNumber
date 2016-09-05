@@ -16,3 +16,7 @@ The category adds the following properties:
 `-(void)rt_setPageNumber:(NSInteger)pageNumber animated:(BOOL)animated;`
 
 Sets the page number with animation.
+
+## Copyright
+
+Copyright © 2011-2016 Ramon Torres. Released under the MIT License.

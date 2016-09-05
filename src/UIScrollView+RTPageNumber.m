@@ -2,7 +2,7 @@
 //  UIScrollView+RTPageNumber.m
 //
 //  Created by Ramon Torres on 12/24/11.
-//  Copyright (c) 2011 Ramon Torres. All rights reserved.
+//  Copyright (c) 2011-2016 Ramon Torres
 //
 //  Permission is hereby granted, free of charge, to any person obtaining
 //  a copy of this software and associated documentation files (the "Software"),
