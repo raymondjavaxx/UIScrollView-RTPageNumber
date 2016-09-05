@@ -7,25 +7,25 @@ Category for calculating and setting current page number on paging-enabled UIScr
 
 The category adds the following methods to UIScrollView and subclases:
 
-`-(NSInteger)rt_totalPages;`
+* `-(NSInteger)rt_totalPages;`:
 
-Returns the total number of pages. Calculated from content and frame size.
+  Returns the total number of pages. Calculated from content and frame size.
 
-`-(void)rt_setPageNumber:(NSInteger)pageNumber animated:(BOOL)animated;`
+* `-(void)rt_setPageNumber:(NSInteger)pageNumber animated:(BOOL)animated;`
 
-Sets the page number with animation.
+  Sets the page number with animation.
 
-`-(void)rt_setPageNumber:(NSInteger)pageNumber;`
+* `-(void)rt_setPageNumber:(NSInteger)pageNumber;`
+  
+  Sets the page number without animation.
 
-Sets the page number without animation.
+* `-(NSInteger)rt_pageNumber;`
 
-`-(NSInteger)rt_pageNumber;`
+  Returns the current page number.
 
-Returns the current page number.
+* `-(BOOL)rt_isLastPage;`
 
-`-(BOOL)rt_isLastPage;`
-
-Returns true if current page is the last.
+  Returns true if current page is the last.
 
 ## Installation
 
