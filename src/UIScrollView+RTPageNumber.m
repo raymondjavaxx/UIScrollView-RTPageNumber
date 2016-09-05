@@ -31,7 +31,7 @@
 }
 
 -(BOOL)rt_isLastPage {
-    return (self.pageNumber == (self.totalPages - 1));
+    return (self.rt_pageNumber == (self.rt_totalPages - 1));
 }
 
 -(void)rt_setPageNumber:(NSInteger)pageNumber animated:(BOOL)animated {
@@ -41,7 +41,7 @@
 }
 
 -(void)rt_setPageNumber:(NSInteger)pageNumber {
-    [self setPageNumber:pageNumber animated:NO];
+    [self rt_setPageNumber:pageNumber animated:NO];
 }
 
 -(NSInteger)rt_pageNumber {
