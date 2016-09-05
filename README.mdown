@@ -5,7 +5,7 @@ Category for calculating and setting current page number on paging-enabled UIScr
 
 ## Extra Methods
 
-The category adds the following methods to UUIScrollView and subclases:
+The category adds the following methods to UIScrollView and subclases:
 
 `-(void)rt_setPageNumber:(NSInteger)pageNumber animated:(BOOL)animated;`
 
