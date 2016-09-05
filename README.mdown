@@ -1,5 +1,18 @@
 UIScrollView+PageNumber
 =======================
 
-Objective-C category for calculating and setting current page number on paging-enabled UIScrollViews
+Category for calculating and setting current page number on paging-enabled UIScrollViews
 
+## Extra Properties
+
+The category adds the following properties:
+
+* `UIScrollView.rt_pageNumber`: Returns the current page number.
+* `UIScrollView.rt_totalPages`: Returns the total number of pages.
+* `UIScrollView.rt_isLastPage` Returns true if current page is last page.
+
+## Extra Methods
+
+`-(void)rt_setPageNumber:(NSInteger)pageNumber animated:(BOOL)animated;`
+
+Sets the page number with animation.
