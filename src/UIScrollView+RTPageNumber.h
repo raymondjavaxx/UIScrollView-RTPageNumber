@@ -24,11 +24,40 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ This category adds a few methods to `UIScrollView` to make it
+ easier to deal with page numbers.
+ */
 @interface UIScrollView (RTPageNumber)
 
+/**
+ Sets the page number.
+
+ @param pageNumber The page.
+ @param animated Whether or not to animate.
+ */
 -(void)rt_setPageNumber:(NSInteger)pageNumber animated:(BOOL)animated;
+
+/**
+ Sets the page number without animation.
+
+ @param pageNumber The page to jump to.
+ */
 -(void)rt_setPageNumber:(NSInteger)pageNumber;
+
+/**
+ Returns the current page number.
+
+ @return current page number.
+ */
 -(NSInteger)rt_pageNumber;
+
+
+/**
+ Returns `YES` if current page is last page.
+
+ @return `YES` if last page, otherwise `NO`.
+ */
 -(BOOL)rt_isLastPage;
 
 @end
