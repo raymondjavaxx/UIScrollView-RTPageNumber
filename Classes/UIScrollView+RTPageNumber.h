@@ -1,5 +1,5 @@
 //
-//  UIScrollView+PageNumber.m
+//  UIScrollView+RTPageNumber.h
 //
 //  Created by Ramon Torres on 12/24/11.
 //  Copyright (c) 2011 Ramon Torres. All rights reserved.
@@ -22,31 +22,14 @@
 //  SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
 
-#import "UIScrollView+PageNumber.h"
+#import <UIKit/UIKit.h>
 
-@implementation UIScrollView (PageNumber)
+@interface UIScrollView (RTPageNumber)
 
--(NSInteger)totalPages {
-	return (NSInteger)ceil((self.contentSize.width/self.frame.size.width));
-}
+@property (nonatomic, assign)   NSInteger rt_pageNumber;
+@property (nonatomic, readonly) NSInteger rt_totalPages;
+@property (nonatomic, readonly) BOOL rt_isLastPage;
 
--(BOOL)isLastPage {
-	return (self.pageNumber == (self.totalPages - 1));
-}
-
--(void)setPageNumber:(NSInteger)pageNumber animated:(BOOL)animated {
-	NSAssert(pageNumber >= 0, @"Page number cannot be negative");
-	CGFloat offset = (self.frame.size.width * pageNumber);
-	[self setContentOffset:CGPointMake(offset, 0.f) animated:animated];
-}
-
--(void)setPageNumber:(NSInteger)pageNumber {
-	[self setPageNumber:pageNumber animated:NO];
-}
-
--(NSInteger)pageNumber {
-	CGFloat pageWidth = self.frame.size.width;
-	return (NSInteger)floor((self.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
-}
+-(void)rt_setPageNumber:(NSInteger)pageNumber animated:(BOOL)animated;
 
 @end
